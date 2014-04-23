@@ -1,3 +1,4 @@
 class Idea < ActiveRecord::Base
-mount_uploader :picture, PictureUploader
+  has_many :comments
+  mount_uploader :picture, PictureUploader
 end
